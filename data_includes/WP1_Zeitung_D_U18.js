@@ -170,13 +170,13 @@ newButton("Weiter","Experiment beginnen")
     ),
 //Zeitung
 Template(
-    GetTable("BListenaufteilung.csv")
+    GetTable("AListenaufteilung.csv")
     .setGroupColumn( "Liste" )
     ,
     row => newTrial( "Trial" ,
         defaultImage.css("margin","1em")
         ,
-        newImage("Header","BHeader.png")
+        newImage("Header","Zeitungsheader.png")
         .settings.css("width, 50%")
         .center().print()
 

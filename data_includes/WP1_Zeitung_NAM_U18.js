@@ -248,7 +248,7 @@ newTrial("Meta1",
                ,
                //Alter
                newDropDown("age", "Bitte eine Option ausw&auml;hlen")
-               .settings.add("18" , "19" , "20", "21" , "22" , "23", "24" , "25" , "26", "27" , "28" , "29", "30" , "31", "32","33", "34" , "35", "36","37","38","39","über 40")
+               .settings.add("12" , "13" , "14", "15" , "16" , "17", "18" , "über 18")
                .log()
 
                ,
@@ -367,7 +367,7 @@ newTrial("Meta1",
                ,
 
               //Leiter
-                newText("Leiter","<b>Die untenstehende Leiter</b> repr&auml;sentiert den relativen Sozialstatus der Menschen in Deutschland. "
+                newText("Leiter","<b>Die untenstehende Leiter</b> repr&auml;sentiert den relativen Sozialstatus der Menschen in Namibia. "
                        +"An der Spitze der Leiter stehen Menschen mit relativ hohem Status – diejenigen, die das meiste Geld, die beste Bildung und die angesehensten Arbeitspl&auml;tze haben. Ganz unten sind Menschen mit relativ niedrigem Status – beispielsweise als arbeitslos Gemeldete. Relativ weit unten zu verorten w&auml;ren auch diejenigen, die nur wenig Geld verdienen, einen niedrigen Bildungstand haben, und / oder Berufe aus&uuml;ben, die die Gesellschaft als eher wenig respektabel ansieht."
                        +"<br> Wo w&uuml;rdest du dich auf dieser Leiter einordnen? W&auml;hle bitte die Sprosse, die deinem empfundenen Sozialstatus am ehesten entspricht.")
                .settings.css("font-size", "18px")
@@ -595,7 +595,7 @@ newText("Leerzeile"," <br></p>")
                 ).and(
              getTextInput("SprachenSelbst").test.text(/^.+/) // testing if at least one digit was written in the input box
                 .failure(
-                   newText("errorselbst","<br>Bitte angeben welche Sprachen du sprichst.")
+                   newText("errorselbst","<br>Bitte angeben, welche Sprachen du sprichst.")
                    .settings.color("red")
                    .center()
                    .print()

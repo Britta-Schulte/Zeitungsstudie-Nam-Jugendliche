@@ -25,6 +25,7 @@ newTrial("Consent",
     newHtml("Consent", "consent.html")
         .center()
         .settings.css("font-size", "large")
+        .checkboxWarning("Bitte die Box %name% anklicken.")
         .print()
 ,
     newButton("Weiter","Weiter")
@@ -113,7 +114,7 @@ newTrial("Code",
         .print()
         .wait(
             getTextInput("Texteingabe-Code").test.text( /[a-zA-Z]+[0-9]+[a-zA-Z]+/i)
-                    .failure( newText('errorcode', "<br>Bitte gib den Code ein.").color("red") .center().print() )
+                    .failure( newText('errorcode', "<br>Bitte Code eingeben.").color("red") .center().print() )
             )
 ,
     newText("Leerzeile"," <br></p>")
@@ -539,6 +540,27 @@ newText("Leerzeile"," <br></p>")
         .print()
 ,
     getTextInput("Dialekt")
+        .log("final")
+,
+newText("Leerzeile"," <br></p>")
+                 .center()
+                .print()
+                 ,
+    newText("Email","<b>Dürften wir dich in Zukunft erneut kontaktieren?</b><br>Wenn ja, bitte Emailadresse angeben.<br>Die Angabe der Kontaktdaten ist freiwillig. Um Anonymität zu gewährleisten, wird diese Angabe getrennt vom ausgefüllten Fragebogen archiviert.")
+//        .center()
+        .print()
+,
+    newCanvas("Email", 1, 10)
+ //       .center()
+        .print()
+,
+
+    newTextInput("Email")
+ //       .center()
+        .size(600,80)
+        .print()
+,
+    getTextInput("Email")
         .log("final")
 ,
 newText("Leerzeile"," <br></p>")

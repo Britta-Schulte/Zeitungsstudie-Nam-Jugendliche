@@ -2,7 +2,7 @@ PennController.ResetPrefix(null);
 PennController.AddHost("https://amor.cms.hu-berlin.de/~idlsfbnd/zeitungsstudie/");
 PennController.DebugOff();
 var progressBarText = "Fortschritt";  
-Sequence("Info","Consent","Code","Anleitung","Counter","Trial","Meta1","Meta2","send","Final");
+Sequence("Info","Code","Consent","Anleitung","Counter","Trial","Meta1","Meta2","send","Final");
 SetCounter("Counter","inc",1);
 
 //New Consent
@@ -109,7 +109,7 @@ newTrial("Code",
 //        .center()
 //        .print()
 //,
-    newButton("weiter","zur Anleitung")
+    newButton("weiter","weiter")
         .center()
         .print()
         .wait(

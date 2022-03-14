@@ -130,7 +130,7 @@ newHtml("Anleitung","anleitung.html")
     .center()
     .print()
 ,
-newImage("Erklärbild","Erklärbild.png")
+newImage("Erklärbild","Erklärbild2.png")
     .size(800,370)
     .print()
 ,
